@@ -1,0 +1,19 @@
+{
+  "name": "front-qui-go",
+  "version": "1.0.0",
+  "description": "front end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franckDev21/payment-page.git"
+  },
+  "author": "FrankDev21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franckDev21/payment-page/issues"
+  },
+  "homepage": "https://github.com/franckDev21/payment-page#readme"
+}
