@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment page</title>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <!-- JS  -->
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <div class="payment">
+    <div class="payment__content">
+      <h1 class="payment__title">
+        Choisissez votre moyent de payment
+      </h1>
+      <div class="payment__block">
+        <div class="payment__aPayer">Montant à payer <span class="payment--orange">(EUR) : 30.000</span></div>
+        <div class="moyen-payment">
+          <div class="moyen-payment__card">
+            <h3 class="moyen-payment__title">MTN MoMo</h3>
+            <span class="moyen-payment__info">Paiement mobile</span>
+            <input type="radio" hidden name="payment-check" id="payment-check-1">
+            <label for="payment-check-1" class="moyen-payment__label moyen-payment__label--active">
+              <img src="https://lemobileaukamer.files.wordpress.com/2014/11/mobile-money.jpg" alt="">
+              <div class="moyen-payment__radio"></div>
+            </label>
+          </div>
+
+          <div class="moyen-payment__card">
+            <h3 class="moyen-payment__title">Orange Money</h3>
+            <span class="moyen-payment__info">Paiement mobile</span>
+            <input type="radio" hidden name="payment-check" id="payment-check-2">
+            <label for="payment-check-2" class="moyen-payment__label moyen-payment__label--active">
+              <img src="https://wanda-techs.com/wp-content/uploads/2021/01/orange-money-scaled.jpg" alt="">
+              <div class="moyen-payment__radio"></div>
+            </label>
+          </div>
+
+          <div class="moyen-payment__card">
+            <h3 class="moyen-payment__title">Carte bancaire</h3>
+            <span class="moyen-payment__info">Paiement en ligne</span>
+            <input type="radio" hidden name="payment-check" id="payment-check-3">
+            <label for="payment-check-3" class="moyen-payment__label moyen-payment__label--active">
+              <img src="https://www.visa.fr/dam/VCOM/regional/ve/france/in-page-images/trouver-une-carte/carte-visa-electron-800x450.jpeg" alt="">
+              <div class="moyen-payment__radio"></div>
+            </label>
+          </div>
+
+          <div class="moyen-payment__card">
+            <h3 class="moyen-payment__title">PayPal</h3>
+            <span class="moyen-payment__info">Paiement en ligne</span>
+            <input type="radio" hidden name="payment-check" id="payment-check-4">
+            <label for="payment-check-4" class="moyen-payment__label moyen-payment__label--active">
+              <img src="https://pic.clubic.com/v1/images/1778096/raw?width=1200&fit=max&hash=662371a8d2831e3915245d5003bd5c265ab69260" alt="">
+              <div class="moyen-payment__radio"></div>
+            </label>
+          </div>
+        </div>
+        <div class="payer">
+          <h3 class="payer__title">Paiement : MTN Mobile Money</h3>
+          <div class="payer__content">
+            <div class="payer__avertissement">
+              <span style="color:red">*</span> Veuillez entrer un numéro MTN Mobile Money valide afin de continuer votre transaction.
+            </div>
+            <form class="card">
+              <div class="card__title">
+                Résumé
+              </div>
+              <div class="card__flex">
+                <span>Montant hors frais de service</span>
+                <span>86 <i class="fas fa-euro-sign"></i></span>
+              </div>
+              <div class="card__flex">
+                <span>Frais de service</span>
+                <span>12 <i class="fas fa-euro-sign"></i></span>
+              </div>
+              <div class="card__space"></div>
+              <div class="card__flex card__flex--total">
+                <span>Total</span>
+                <span>90 <i class="fas fa-euro-sign"></i></span>
+              </div>
+              <label class="card__label">Entrez votre numéro de téléphone</label>
+              <input type="tel" placeholder="EX: 67777777" class="card__input">
+              <label for="check" class="card__check">
+                <input type="checkbox" name="" id="check">
+                J'accepte les <span>Conditions d'utilisation</span>
+              </label>
+              <div class="card__btn">Procéder</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
